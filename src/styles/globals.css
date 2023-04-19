@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-backgroundy > div > svg {
+  animation-name: appear;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform: scale(30);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +34,8 @@
 }
 
 body {
+  margin: 0;
+  font-family: "Fira Code", serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
