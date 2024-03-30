@@ -7,41 +7,53 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import { useDispatch } from "react-redux";
 import { setIcon } from "@/state/slices/footerSlice";
 import React from "react";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function Footer() {
-  const icons = [
-    { icon: <GitHubIcon />, link: "https://github.com/IbraheemHaseeb7", id: 1 },
-    { icon: <FacebookIcon />, link: "https://facebook.com", id: 2 },
-    { icon: <EmailIcon />, link: "mailto:ibraheemhaseeb7@gmail.com", id: 3 },
-    { icon: <WhatsAppIcon />, link: "https://wa.me/923334574770", id: 4 },
-    { icon: <TwitterIcon />, link: "https://twitter.com", id: 5 },
-  ];
+    const icons = [
+        {
+            icon: <GitHubIcon />,
+            link: "https://github.com/IbraheemHaseeb7",
+            id: 1,
+        },
+        {
+            icon: <LinkedInIcon />,
+            link: "https://linkedin.com/in/ibraheemhaseeb7",
+            id: 2,
+        },
+        {
+            icon: <EmailIcon />,
+            link: "mailto:ibraheemhaseeb7@gmail.com",
+            id: 3,
+        },
+        { icon: <WhatsAppIcon />, link: "https://wa.me/923334574770", id: 4 },
+    ];
 
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
-  function hovering(e: any) {
-    e.preventDefault();
+    function hovering(e: any) {
+        e.preventDefault();
 
-    dispatch(setIcon(e.target?.outerHTML));
-  }
+        dispatch(setIcon(e.target?.outerHTML));
+    }
 
-  return (
-    <footer className="w-full h-20 flex justify-center items-center fixed bottom-0 left-0 z-20">
-      <div className={`${styles.inner} text-pinky flex gap-5`}>
-        {icons.map(({ icon, link, id }) => {
-          return (
-            <a
-              target="_blank"
-              onMouseEnter={hovering}
-              href={link}
-              key={id}
-              data-icon={icon}
-            >
-              {icon}
-            </a>
-          );
-        })}
-      </div>
-    </footer>
-  );
+    return (
+        <footer className="w-full h-20 flex justify-center items-center fixed bottom-0 left-0 z-20">
+            <div className={`${styles.inner} text-pinky flex gap-5`}>
+                {icons.map(({ icon, link, id }) => {
+                    return (
+                        <a
+                            target="_blank"
+                            onMouseEnter={hovering}
+                            href={link}
+                            key={id}
+                            data-icon={icon}
+                        >
+                            {icon}
+                        </a>
+                    );
+                })}
+            </div>
+        </footer>
+    );
 }
