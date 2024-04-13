@@ -25,6 +25,12 @@ export default function Navbar() {
                 style={"col-start-1 col-end-2"}
                 func={(e: any) => {
                     e.preventDefault();
+                    const downloadLink = document.createElement("a");
+                    downloadLink.href =
+                        "/resume/full_stack_Ibraheem_bin_haseeb.pdf";
+                    downloadLink.download =
+                        "full_stack_Ibraheem_bin_haseeb.pdf";
+                    downloadLink.click();
                 }}
             />
             <div className="w-full flex justify-center items-center gap-6 text-pinky">
