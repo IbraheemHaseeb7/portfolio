@@ -7,36 +7,32 @@ export default function About() {
     const data = [
         {
             heading: "Full Stack Developer at CodeSuite",
-            description: "",
-            icon: "https://prod.spline.design/nec1G9WRYrzv9Wb4/scene.splinecode",
-        },
-        {
-            heading: "Data Science Intern at OneCrew Technologies",
-            description: "",
+            description:
+                "Built a prototype for an ads application using AWS services (EC2, RDS). Managed an desktop healthcare application, deploying endpoints on AWS(Lambda, API Gateway)",
             icon: "https://prod.spline.design/nec1G9WRYrzv9Wb4/scene.splinecode",
         },
         {
             heading: "DevOps with AWS and Azure",
             description:
-                "After covering MERN stack, I have been exploring more and more frameworks like SpringBoot. Furthermore, I really love the idea of DevOps. I ",
+                "After covering MERN stack, I have been exploring more and more frameworks like SpringBoot. Furthermore, learning Docker, Kubernetes, Jenkins, Github Actions, and more.",
             icon: "https://prod.spline.design/jSrGfcVWoQ9Jtf-q/scene.splinecode",
         },
         {
             heading: "MLSA Beta Ambassador",
             description:
-                "After covering MERN stack, I have been exploring more and more frameworks like SpringBoot. Furthermore, I really love the idea of DevOps. I ",
+                "Delivered workshops on Azure and services, Git, and Github. Organized a hackathon with more than 50 participants.",
             icon: "https://prod.spline.design/jSrGfcVWoQ9Jtf-q/scene.splinecode",
         },
         {
             heading: "IEEE RAS Student Chapter Tech Lead",
             description:
-                "After covering MERN stack, I have been exploring more and more frameworks like SpringBoot. Furthermore, I really love the idea of DevOps. I ",
+                "Delivered workshops on Git, GitHub, Rust, Pandas, Springboot, and Azure. Deployed fully functional portal for the community using Supabase.",
             icon: "https://prod.spline.design/jSrGfcVWoQ9Jtf-q/scene.splinecode",
         },
         {
             heading: "Education",
             description:
-                "Currently enrolled in Comsats University for BsCS program. Expected graduation year is 2025. What I love about my degree is it has given me the opportunity to learn and explore different fields of computer science and software engineering.",
+                "Currently enrolled in Comsats University for BsCS program. Expected graduation year is 2025. Minoring in Aritificial Intelligence. Courses include Machine Learning, Data Warehousing, Image Processing, Data Mining, and more.",
             icon: "https://prod.spline.design/XSO8pWji1EwnudqI/scene.splinecode",
         },
     ];
