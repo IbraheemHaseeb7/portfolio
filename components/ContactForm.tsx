@@ -55,7 +55,7 @@ export default function ContactForm({
             {contacts.map((data) => {
                 if (data.name === "description") {
                     return (
-                        <div className={data.classes}>
+                        <div className={data.classes} key={data.name}>
                             <span className="text-creamy ml-2 capitalize">
                                 {data.name}
                             </span>
@@ -71,7 +71,7 @@ export default function ContactForm({
                     );
                 } else {
                     return (
-                        <div className="w-full">
+                        <div className="w-full" key={data.name}>
                             <span className="text-creamy ml-2 capitalize">
                                 {data.name}
                             </span>

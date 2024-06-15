@@ -34,13 +34,19 @@ export default function Project({
                     {technologies.split("|").map((data, index) => {
                         if (index === 1) {
                             return (
-                                <p className="w-[90%] text-center text-creamy font-bold">
+                                <p
+                                    key={data}
+                                    className="w-[90%] text-center text-creamy font-bold"
+                                >
                                     {data}
                                 </p>
                             );
                         } else {
                             return (
-                                <p className="w-[90%] text-center text-creamy">
+                                <p
+                                    key={data}
+                                    className="w-[90%] text-center text-creamy"
+                                >
                                     {data}
                                 </p>
                             );
