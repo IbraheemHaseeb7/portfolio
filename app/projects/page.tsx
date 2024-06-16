@@ -23,7 +23,7 @@ export default function Work() {
             title: "Portal for IEEE RAS CUI LHR Student Chapter",
             technologies:
                 "Complete functional portal for the members to manage members and provide a fun platform with profile customization for members | Next JS, Supabase, Tailwind CSS",
-            image: "/projects/full_stack_development/ieee_ras.png",
+            image: "/projects/full_stack_development/ieee_ras.PNG",
             id: "business-site",
             link: "https://portal.rascui.tech",
         },
@@ -40,7 +40,7 @@ export default function Work() {
             technologies:
                 "Portfolio website for a local business | Next JS, Tailwind CSS",
             image:
-                "/projects/full_stack_development/cleonora_london.png" ||
+                "/projects/full_stack_development/cleonora_london.PNG" ||
                 "/projects/bg.jpg",
             id: "ieee-portal",
             link: "https://www.cleonoralondon.com/",
@@ -50,7 +50,7 @@ export default function Work() {
             technologies:
                 "Web application for a local business to provide a platform for their customers to have a community and share their experiences. | Next JS, Firebase",
             image:
-                "/projects/full_stack_development/fight_your_nafs.png" ||
+                "/projects/full_stack_development/fight_your_nafs.PNG" ||
                 "/projects/bg.jpg",
             id: "ieee-portal",
             link: "https://fightyournafs.vercel.app/",
@@ -60,7 +60,7 @@ export default function Work() {
             technologies:
                 "Portfolio website for a small local industry. | React JS",
             image:
-                "/projects/full_stack_development/alpha_cyber.png" ||
+                "/projects/full_stack_development/alpha_cyber.PNG" ||
                 "/projects/bg.jpg",
             id: "ieee-portal",
             link: "https://tripanda.vercel.app/",
@@ -70,7 +70,7 @@ export default function Work() {
             technologies:
                 "Web application to manage your trips and expenses with proofs for transparency. | React JS, Firebase",
             image:
-                "/projects/full_stack_development/trip_panda.png" ||
+                "/projects/full_stack_development/trip_panda.PNG" ||
                 "/projects/bg.jpg",
             id: "ieee-portal",
             link: "https://tripanda.vercel.app/",
@@ -88,7 +88,7 @@ export default function Work() {
             title: "Tumor Detection with CNN",
             technologies:
                 "Trained a CNN that classifies if there is tumor or not, further detection of tumor is performed using segmentation. | SK Learn, OpenCV, Matplotlib",
-            image: "/projects/ai_ml_ip/tumor_cnn.png" || "/projects/bg.jpg",
+            image: "/projects/ai_ml_ip/tumor_cnn.PNG" || "/projects/bg.jpg",
             id: "pos-system",
             link: "https://github.com/IbraheemHaseeb7/dip-project.git",
         },
