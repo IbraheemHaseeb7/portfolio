@@ -16,7 +16,7 @@ export default function Navbar() {
     const [routing, setRouting] = useState({ btnId: 0, name: "" });
 
     return (
-        <nav className="w-full grid grid-cols-nav h-24 z-20 bg-backgroundy overflow-hidden fixed top-0">
+        <nav className="w-full grid grid-cols-nav h-24 z-20 bg-backgroundy fixed top-0 max-sm:grid-cols-sm-nav">
             <TransitionOnButton button_id={routing.btnId} name={routing.name} />
             <NavButton
                 type="submit"
@@ -31,7 +31,7 @@ export default function Navbar() {
                     downloadLink.click();
                 }}
             />
-            <div className="w-full flex justify-center items-center gap-6 text-pinky">
+            <div className="w-full flex justify-center items-center gap-6 text-pinky max-sm:hidden">
                 <button
                     onClick={() => {
                         router.push("/");

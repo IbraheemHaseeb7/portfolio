@@ -1,9 +1,18 @@
 "use client";
 
+import Options from "@/components/Options";
 import Projects from "@/components/Projects";
 import Transition from "@/components/Transition";
+import { useSelector } from "react-redux";
 
 export default function Work() {
+    const stateSelector = useSelector((state: any) => {
+        return {
+            option: state.options,
+            contact: state.contacts,
+        };
+    });
+
     const fullStack: {
         title: string;
         technologies: string;
@@ -125,6 +134,7 @@ export default function Work() {
 
     return (
         <Transition name="Projects">
+            <Options isShowing={stateSelector.option.isOpen} />
             <main className="min-h-[100vh] bg-backgroundy w-full flex justify-start items-center flex-col py-[7rem] gap-7">
                 <Projects projects={fullStack} title="Full Stack Development" />
                 {/* <Projects projects={devops} title="DevOps" /> */}
