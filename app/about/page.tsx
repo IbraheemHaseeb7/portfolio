@@ -2,6 +2,8 @@
 
 import Transition from "@/components/Transition";
 import Spline from "@splinetool/react-spline";
+import { useSelector } from "react-redux";
+import Options from "@/components/Options";
 
 export default function About() {
     const data = [
@@ -37,9 +39,18 @@ export default function About() {
         },
     ];
 
+    const stateSelector = useSelector((state: any) => {
+        return {
+            option: state.options,
+            contact: state.contacts,
+        };
+    });
+
     return (
         <Transition name="About">
             <div className="w-full min-h-[500vh] select-none bg-backgroundy">
+                <Options isShowing={stateSelector.option.isOpen} />
+
                 <div className="w-full h-[500vh] relative top-0 left-0 z-10">
                     <div className="w-1/2 h-[500vh]">
                         {data.map(({ heading, description, icon }) => {
