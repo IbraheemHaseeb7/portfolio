@@ -8,7 +8,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { delay } from "@reduxjs/toolkit/dist/utils";
 
 const space_mono = Space_Mono({ weight: "400", subsets: ["latin"] });
 
