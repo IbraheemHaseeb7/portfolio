@@ -39,14 +39,14 @@ export default function About() {
 
     return (
         <Transition name="About">
-            <div className="w-full min-h-[600vh] select-none bg-backgroundy">
-                <div className="w-full h-[600vh] relative top-0 left-0 z-10">
-                    <div className="w-1/2 h-[600vh]">
+            <div className="w-full min-h-[500vh] select-none bg-backgroundy">
+                <div className="w-full h-[500vh] relative top-0 left-0 z-10">
+                    <div className="w-1/2 h-[500vh]">
                         {data.map(({ heading, description, icon }) => {
                             return (
                                 <div
                                     key={heading}
-                                    className="h-1/6 flex justify-center items-center flex-col gap-3"
+                                    className="h-1/5 flex justify-center items-center flex-col gap-3"
                                 >
                                     <div className="w-2/3 flex gap-5 justify-between items-center">
                                         <h1 className="text-3xl">{heading}</h1>
@@ -65,7 +65,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="fixed top-0 right-0 w-1/2 h-screen -z-1 opacity-100 select-none">
-                    <Spline scene="https://prod.spline.design/43NwbyF6cOQQjhSO/scene.splinecode" />
+                    <Spline scene="/objects/scene.splinecode" />
                 </div>
             </div>
         </Transition>

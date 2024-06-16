@@ -39,7 +39,9 @@ export default function Work() {
             title: "Cleonora London",
             technologies:
                 "Portfolio website for a local business | Next JS, Tailwind CSS",
-            image: "/projects/bg.jpg",
+            image:
+                "/projects/full_stack_development/cleonora_london.png" ||
+                "/projects/bg.jpg",
             id: "ieee-portal",
             link: "https://www.cleonoralondon.com/",
         },
@@ -47,7 +49,9 @@ export default function Work() {
             title: "Fight your Nafs",
             technologies:
                 "Web application for a local business to provide a platform for their customers to have a community and share their experiences. | Next JS, Firebase",
-            image: "/projects/bg.jpg",
+            image:
+                "/projects/full_stack_development/fight_your_nafs.png" ||
+                "/projects/bg.jpg",
             id: "ieee-portal",
             link: "https://fightyournafs.vercel.app/",
         },
@@ -55,7 +59,9 @@ export default function Work() {
             title: "Alpha Cyber",
             technologies:
                 "Portfolio website for a small local industry. | React JS",
-            image: "/projects/bg.jpg",
+            image:
+                "/projects/full_stack_development/alpha_cyber.png" ||
+                "/projects/bg.jpg",
             id: "ieee-portal",
             link: "https://tripanda.vercel.app/",
         },
@@ -63,7 +69,9 @@ export default function Work() {
             title: "Trip Panda",
             technologies:
                 "Web application to manage your trips and expenses with proofs for transparency. | React JS, Firebase",
-            image: "/projects/bg.jpg",
+            image:
+                "/projects/full_stack_development/trip_panda.png" ||
+                "/projects/bg.jpg",
             id: "ieee-portal",
             link: "https://tripanda.vercel.app/",
         },
@@ -74,26 +82,22 @@ export default function Work() {
         technologies: string;
         image: string;
         id: string;
+        link: string;
     }[] = [
-        {
-            title: "Portal for IEEE RAS",
-            technologies:
-                "Complete functional portal for the members of IEEE RAS CUI LHR Student Chapter to manage members and provide a fun platform with profile customization for members",
-            image: "/projects/bg.jpg",
-            id: "business-site",
-        },
         {
             title: "Tumor Detection with CNN",
             technologies:
-                "Point of Sale system for a local business. Helped managing their entire inventory and their sales | Electron JS, Next JS, Supabase",
-            image: "/projects/bg.jpg",
+                "Trained a CNN that classifies if there is tumor or not, further detection of tumor is performed using segmentation. | SK Learn, OpenCV, Matplotlib",
+            image: "/projects/ai_ml_ip/tumor_cnn.png" || "/projects/bg.jpg",
             id: "pos-system",
+            link: "https://github.com/IbraheemHaseeb7/dip-project.git",
         },
         {
-            title: "POS System",
+            title: "ML Algorithms Implementation",
             technologies: "A point of sale system for a local business.",
             image: "/projects/bg.jpg",
             id: "ieee-portal",
+            link: "",
         },
     ];
 
@@ -123,8 +127,8 @@ export default function Work() {
         <Transition name="Projects">
             <main className="min-h-[100vh] bg-backgroundy w-full flex justify-start items-center flex-col py-[7rem] gap-7">
                 <Projects projects={fullStack} title="Full Stack Development" />
-                {/* <Projects projects={devops} title="DevOps" />
-                <Projects projects={ai} title="AI, ML, and Image Processing" /> */}
+                {/* <Projects projects={devops} title="DevOps" /> */}
+                <Projects projects={ai} title="AI, ML, and Image Processing" />
             </main>
         </Transition>
     );

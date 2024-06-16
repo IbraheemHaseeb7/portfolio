@@ -16,7 +16,7 @@ export default function Navbar() {
     const [routing, setRouting] = useState({ btnId: 0, name: "" });
 
     return (
-        <nav className="w-full grid grid-cols-nav h-24 z-20 bg-backgroundy overflow-hidden absolute top-0">
+        <nav className="w-full grid grid-cols-nav h-24 z-20 bg-backgroundy overflow-hidden fixed top-0">
             <TransitionOnButton button_id={routing.btnId} name={routing.name} />
             <NavButton
                 type="submit"
@@ -26,10 +26,8 @@ export default function Navbar() {
                 func={(e: any) => {
                     e.preventDefault();
                     const downloadLink = document.createElement("a");
-                    downloadLink.href =
-                        "/resume/full_stack_Ibraheem_bin_haseeb.pdf";
-                    downloadLink.download =
-                        "full_stack_Ibraheem_bin_haseeb.pdf";
+                    downloadLink.href = "/api/resume";
+                    downloadLink.target = "_blank";
                     downloadLink.click();
                 }}
             />

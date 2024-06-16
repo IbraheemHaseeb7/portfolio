@@ -23,7 +23,7 @@ export default function Contact() {
     return (
         <Transition name="Contact">
             <div className="min-h-screen w-full bg-backgroundy">
-                {isLoaded !== 2 && (
+                {isLoaded < 2 && (
                     <div className="flex justify-center bg-backgroundy items-center w-full h-screen fixed top-0 left-0 z-10">
                         <div className="fixed z-20">
                             <h1 className="text-creamy">Loading...</h1>
