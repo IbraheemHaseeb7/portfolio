@@ -59,7 +59,7 @@ export default function Work() {
             technologies:
                 "Web application for a local business to provide a platform for their customers to have a community and share their experiences. | Next JS, Firebase",
             image:
-                "/projects/full_stack_development/fight_your_nafs.PNG" ||
+                "/projects/full_stack_development/fight_your_nafs.png" ||
                 "/projects/bg.jpg",
             id: "ieee-portal",
             link: "https://fightyournafs.vercel.app/",

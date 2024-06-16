@@ -1,3 +1,5 @@
+"use client";
+
 import NavButton from "./NavButton";
 import { click } from "@/state/slices/optionsSlice";
 import { useDispatch } from "react-redux";

@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./footer.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
