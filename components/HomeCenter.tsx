@@ -2,9 +2,38 @@
 
 import { TypeAnimation } from "react-type-animation";
 import { useEffect, useRef } from "react";
+import { motion, Variants } from "framer-motion";
 
 export default function HomeCenter() {
     const homeCenter: any = useRef();
+
+    const homeCenterVariants: Variants = {
+        offscreen: {
+            opacity: 0,
+        },
+        onscreen: {
+            opacity: 1,
+            transition: {
+                ease: "easeInOut",
+                duration: 0.8,
+            },
+        },
+    };
+
+    const scrollDownVariants: Variants = {
+        offscreen: {
+            opacity: 0,
+        },
+        onscreen: {
+            opacity: [1, 0, 1],
+            transition: {
+                repeat: Infinity,
+                delay: 1,
+                ease: "easeInOut",
+                duration: 2,
+            },
+        },
+    };
 
     useEffect(() => {
         window.addEventListener("mousemove", mouseMovement);
@@ -27,15 +56,18 @@ export default function HomeCenter() {
     }
 
     return (
-        <div
+        <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            variants={homeCenterVariants}
             ref={homeCenter}
-            className="flex flex-col items-center justify-center w-2/3 h-1/3 m-0 p-0 gap-5 z-10"
+            className="flex flex-col items-center justify-center w-full h-screen m-0 p-0 gap-5 z-10"
         >
             <TypeAnimation
                 sequence={["Ibraheem Bin Haseeb"]}
                 wrapper="span"
                 speed={50}
-                style={{ fontSize: "2rem", display: "inline-block" }}
+                className="text-[2rem] max-sm:text-[1.25rem]"
                 cursor={false}
                 repeat={1}
             />
@@ -46,11 +78,18 @@ export default function HomeCenter() {
                 ]}
                 wrapper="span"
                 speed={50}
-                style={{ fontSize: "1rem", display: "inline-block" }}
-                className=""
+                className="text-[1rem] w-4/5 text-center"
                 repeat={1}
                 cursor={false}
             />
-        </div>
+            <motion.div
+                initial="offscreen"
+                whileInView="onscreen"
+                variants={scrollDownVariants}
+                className="fixed bottom-20"
+            >
+                <p>Scroll Down</p>
+            </motion.div>
+        </motion.div>
     );
 }
