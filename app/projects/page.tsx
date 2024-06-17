@@ -18,24 +18,24 @@ export default function Work() {
             title: "Social Media Web App",
             technologies:
                 "Full stack web app with user authentication, posts, comments, likes, and profile customization | MERN Stack, JWT, Session, Ejs",
-            image: "/projects/bg.jpg",
-            id: "ieee-portal",
+            image: "/projects/placeholder.webp",
+            id: "1",
             link: "https://github.com/IbraheemHaseeb7/mern-term-project",
         },
         {
             title: "Portal for IEEE RAS CUI LHR Student Chapter",
             technologies:
                 "Complete functional portal for the members to manage members and provide a fun platform with profile customization for members | Next JS, Supabase, Tailwind CSS",
-            image: "/projects/full_stack_development/ieee_ras.PNG",
-            id: "business-site",
+            image: "/projects/full_stack_development/ieee_ras.webp",
+            id: "2",
             link: "https://portal.rascui.tech",
         },
         {
             title: "POS System",
             technologies:
                 "Point of Sale system for a local business. Helped managing their entire inventory and their sales | Electron JS, Next JS, Supabase",
-            image: "/projects/bg.jpg",
-            id: "pos-system",
+            image: "/projects/placeholder.webp",
+            id: "3",
             link: "https://github.com/IbraheemHaseeb7/product_management/tree/firebase",
         },
         {
@@ -43,9 +43,9 @@ export default function Work() {
             technologies:
                 "Portfolio website for a local business | Next JS, Tailwind CSS",
             image:
-                "/projects/full_stack_development/cleonora_london.PNG" ||
-                "/projects/bg.jpg",
-            id: "ieee-portal",
+                "/projects/full_stack_development/cleonora_london.webp" ||
+                "/projects/placeholder.webp",
+            id: "4",
             link: "https://www.cleonoralondon.com/",
         },
         {
@@ -53,9 +53,9 @@ export default function Work() {
             technologies:
                 "Web application for a local business to provide a platform for their customers to have a community and share their experiences. | Next JS, Firebase",
             image:
-                "/projects/full_stack_development/fight_your_nafs.png" ||
-                "/projects/bg.jpg",
-            id: "ieee-portal",
+                "/projects/full_stack_development/fight_your_nafs.webp" ||
+                "/projects/placeholder.webp",
+            id: "4",
             link: "https://fightyournafs.vercel.app/",
         },
         {
@@ -63,9 +63,9 @@ export default function Work() {
             technologies:
                 "Portfolio website for a small local industry. | React JS",
             image:
-                "/projects/full_stack_development/alpha_cyber.PNG" ||
-                "/projects/bg.jpg",
-            id: "ieee-portal",
+                "/projects/full_stack_development/alpha_cyber.webp" ||
+                "/projects/placeholder.webp",
+            id: "5",
             link: "https://tripanda.vercel.app/",
         },
         {
@@ -73,9 +73,9 @@ export default function Work() {
             technologies:
                 "Web application to manage your trips and expenses with proofs for transparency. | React JS, Firebase",
             image:
-                "/projects/full_stack_development/trip_panda.PNG" ||
-                "/projects/bg.jpg",
-            id: "ieee-portal",
+                "/projects/full_stack_development/trip_panda.webp" ||
+                "/projects/placeholder.webp",
+            id: "6",
             link: "https://tripanda.vercel.app/",
         },
     ];
@@ -91,15 +91,17 @@ export default function Work() {
             title: "Tumor Detection with CNN",
             technologies:
                 "Trained a CNN that classifies if there is tumor or not, further detection of tumor is performed using segmentation. | SK Learn, OpenCV, Matplotlib",
-            image: "/projects/ai_ml_ip/tumor_cnn.PNG" || "/projects/bg.jpg",
-            id: "pos-system",
+            image:
+                "/projects/ai_ml_ip/tumor_cnn.webp" ||
+                "/projects/placeholder.webp",
+            id: "1",
             link: "https://github.com/IbraheemHaseeb7/dip-project.git",
         },
         {
             title: "ML Algorithms Implementation",
             technologies: "A point of sale system for a local business.",
-            image: "/projects/bg.jpg",
-            id: "ieee-portal",
+            image: "/projects/placeholder.webp",
+            id: "2",
             link: "",
         },
     ];
