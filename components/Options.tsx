@@ -1,10 +1,14 @@
+"use client";
+
 import NavButton from "./NavButton";
 import OptionButton from "./OptionButton";
 import { useEffect, useRef } from "react";
-import { useDispatch } from "react-redux";
-import { click } from "@/state/slices/optionsSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { click, getOptionsSelector } from "@/state/slices/optionsSlice";
 
-export default function Options({ isShowing }: { isShowing: boolean }) {
+export default function Options() {
+    const options = useSelector((state: any) => getOptionsSelector(state));
+
     const buttons = [
         { name: "Home", link: "/" },
         { name: "About Me", link: "/about" },
@@ -15,10 +19,10 @@ export default function Options({ isShowing }: { isShowing: boolean }) {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        optionsContainer.current.style = isShowing
+        optionsContainer.current.style = options.isOpen
             ? `right: 0;`
             : `right: 100%`;
-    }, [isShowing]);
+    }, [options.isOpen]);
 
     function closeFunction() {
         dispatch(click());

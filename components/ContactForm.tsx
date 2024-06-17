@@ -1,33 +1,30 @@
-import { typing } from "@/state/slices/contactSlice";
-import { useDispatch } from "react-redux";
+"use client";
+
+import { getContactSelector, typing } from "@/state/slices/contactSlice";
+import { useDispatch, useSelector } from "react-redux";
 import emailjs from "@emailjs/browser";
 
-export default function ContactForm({
-    stateSelector,
-}: {
-    stateSelector: {
-        contact: { name: string; email: string; description: string };
-    };
-}) {
+export default function ContactForm() {
     const dispatch = useDispatch();
+    const contact = useSelector((state: any) => getContactSelector(state));
 
     const contacts = [
         {
             name: "name",
             placeholder: "John Doe",
-            value: stateSelector.contact.name,
+            value: contact.name,
             classes: "h-[3rem]",
         },
         {
             name: "email",
             placeholder: "john@doe.com",
-            value: stateSelector.contact.email,
+            value: contact.email,
             classes: "h-[3rem]",
         },
         {
             name: "description",
             placeholder: "Anything you want to say...",
-            value: stateSelector.contact.description,
+            value: contact.description,
             classes: "h-[10rem] col-[1/3] w-full",
         },
     ];
