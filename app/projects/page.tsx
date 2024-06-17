@@ -34,7 +34,7 @@ export default function Work() {
             title: "POS System",
             technologies:
                 "Point of Sale system for a local business. Helped managing their entire inventory and their sales | Electron JS, Next JS, Supabase",
-            image: "/projects/placeholder.webp",
+            image: "/projects/full_stack_development/pos_system.webp",
             id: "3",
             link: "https://github.com/IbraheemHaseeb7/product_management/tree/firebase",
         },
@@ -42,9 +42,7 @@ export default function Work() {
             title: "Cleonora London",
             technologies:
                 "Portfolio website for a local business | Next JS, Tailwind CSS",
-            image:
-                "/projects/full_stack_development/cleonora_london.webp" ||
-                "/projects/placeholder.webp",
+            image: "/projects/full_stack_development/cleonora_london.webp",
             id: "4",
             link: "https://www.cleonoralondon.com/",
         },
@@ -52,9 +50,7 @@ export default function Work() {
             title: "Fight your Nafs",
             technologies:
                 "Web application for a local business to provide a platform for their customers to have a community and share their experiences. | Next JS, Firebase",
-            image:
-                "/projects/full_stack_development/fight_your_nafs.webp" ||
-                "/projects/placeholder.webp",
+            image: "/projects/full_stack_development/fight_your_nafs.webp",
             id: "4",
             link: "https://fightyournafs.vercel.app/",
         },
@@ -62,9 +58,7 @@ export default function Work() {
             title: "Alpha Cyber",
             technologies:
                 "Portfolio website for a small local industry. | React JS",
-            image:
-                "/projects/full_stack_development/alpha_cyber.webp" ||
-                "/projects/placeholder.webp",
+            image: "/projects/full_stack_development/alpha_cyber.webp",
             id: "5",
             link: "https://tripanda.vercel.app/",
         },
@@ -72,9 +66,7 @@ export default function Work() {
             title: "Trip Panda",
             technologies:
                 "Web application to manage your trips and expenses with proofs for transparency. | React JS, Firebase",
-            image:
-                "/projects/full_stack_development/trip_panda.webp" ||
-                "/projects/placeholder.webp",
+            image: "/projects/full_stack_development/trip_panda.webp",
             id: "6",
             link: "https://tripanda.vercel.app/",
         },
