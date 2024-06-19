@@ -3,30 +3,6 @@
 import Skill from "./Skill";
 
 export default function Skills() {
-    const frontEndSkills: {
-        title: string;
-        description: string;
-        skills: Array<{ img: string; name: string }>;
-    } = {
-        title: "Frontend Development",
-        description:
-            "I have experience with the following front end technologies:",
-        skills: [
-            { img: "/skills/frontend/next.webp", name: "Next" },
-            { img: "/skills/frontend/react.webp", name: "React" },
-            { img: "/skills/frontend/redux.webp", name: "Redux" },
-            { img: "/skills/frontend/electron.webp", name: "Electron" },
-            { img: "/skills/frontend/html.webp", name: "HTML" },
-            { img: "/skills/frontend/css.webp", name: "CSS" },
-            { img: "/skills/frontend/javascript.webp", name: "Javascript" },
-            { img: "/skills/frontend/jquery.webp", name: "JQuery" },
-            { img: "/skills/frontend/svelte.webp", name: "Svelte" },
-            { img: "/skills/frontend/react.webp", name: "React Native" },
-            { img: "/skills/frontend/flutter.webp", name: "Flutter" },
-            { img: "/skills/frontend/javafx.webp", name: "JavaFX" },
-        ],
-    };
-
     const backEndSkills: {
         title: string;
         description: string;
@@ -34,7 +10,7 @@ export default function Skills() {
     } = {
         title: "Backend Development",
         description:
-            "I have experience with the following front end technologies:",
+            "Logical minds find their aesthetics in well formatted data.",
         skills: [
             { img: "/skills/backend/nodejs.webp", name: "Node JS" },
             { img: "/skills/backend/express.webp", name: "Express" },
@@ -52,6 +28,31 @@ export default function Skills() {
             { img: "/skills/backend/github.webp", name: "Git/Github" },
         ],
     };
+
+    const frontEndSkills: {
+        title: string;
+        description: string;
+        skills: Array<{ img: string; name: string }>;
+    } = {
+        title: "Frontend Development",
+        description:
+            "What you see is what you get, but what you don't see is what you code.",
+        skills: [
+            { img: "/skills/frontend/next.webp", name: "Next" },
+            { img: "/skills/frontend/react.webp", name: "React" },
+            { img: "/skills/frontend/redux.webp", name: "Redux" },
+            { img: "/skills/frontend/electron.webp", name: "Electron" },
+            { img: "/skills/frontend/html.webp", name: "HTML" },
+            { img: "/skills/frontend/css.webp", name: "CSS" },
+            { img: "/skills/frontend/javascript.webp", name: "Javascript" },
+            { img: "/skills/frontend/jquery.webp", name: "JQuery" },
+            { img: "/skills/frontend/svelte.webp", name: "Svelte" },
+            { img: "/skills/frontend/react.webp", name: "React Native" },
+            { img: "/skills/frontend/flutter.webp", name: "Flutter" },
+            { img: "/skills/frontend/javafx.webp", name: "JavaFX" },
+        ],
+    };
+
     const machineLearning: {
         title: string;
         description: string;
@@ -59,7 +60,7 @@ export default function Skills() {
     } = {
         title: "Machine Learning",
         description:
-            "I have experience with the following front end technologies:",
+            "Machines are learning, but are you learning to make them learn?",
         skills: [
             { img: "/skills/machine_learning/sklearn.webp", name: "SK Learn" },
             { img: "/skills/machine_learning/opencv.webp", name: "OpenCV" },
@@ -81,7 +82,7 @@ export default function Skills() {
     } = {
         title: "Programming Languages",
         description:
-            "I have experience with the following front end technologies:",
+            "Programming is not just about writing code, it's about writing logic.",
         skills: [
             { img: "/skills/programming_languages/java.webp", name: "Java" },
             {

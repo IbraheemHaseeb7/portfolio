@@ -31,7 +31,7 @@ export default function Options() {
     return (
         <div
             ref={optionsContainer}
-            className="w-full h-screen border-solid border-2 border-pinky absolute bg-backgroundy z-20 overflow-hidden flex flex-col items-center justify-start right-full ease duration-150"
+            className="w-full h-screen border-solid border-2 border-pinky fixed bg-backgroundy z-20 overflow-hidden flex flex-col items-center justify-start right-full ease duration-150"
         >
             <div className="w-full h-24 grid grid-cols-nav">
                 <NavButton

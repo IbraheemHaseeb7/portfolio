@@ -46,7 +46,7 @@ export default function ContactForm() {
 
     return (
         <form
-            className="w-1/2 grid grid-cols-2 justify-items-center gap-5 ml-[4rem]"
+            className="w-1/2 grid grid-cols-2 justify-items-center gap-5 ml-[4rem] max-sm:w-2/3 max-sm:ml-0"
             onSubmit={handleSubmit}
         >
             {contacts.map((data) => {

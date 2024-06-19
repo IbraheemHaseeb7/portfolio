@@ -11,7 +11,7 @@ export default function Contact() {
     return (
         <Transition name="Contact">
             <div className="min-h-screen w-full bg-backgroundy">
-                <div className="absolute w-full h-screen top-0 right-0 flex justify-center items-center">
+                <div className="absolute w-full h-screen top-0 right-0 flex justify-center items-center max-sm:flex-col-reverse max-sm:gap-5">
                     <ContactForm />
                     <ContactModel />
                 </div>

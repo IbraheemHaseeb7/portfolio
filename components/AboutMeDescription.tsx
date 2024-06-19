@@ -8,15 +8,17 @@ export default function AboutMeDescription({
     data: { heading: string; description: string; icon: string }[];
 }) {
     return (
-        <div className="w-1/2 h-[500vh]">
+        <div className="w-1/2 h-[500vh] max-lg:w-2/3">
             {data.map(({ heading, description, icon }) => {
                 return (
                     <div
                         key={heading}
-                        className="h-1/5 flex justify-center items-center flex-col gap-3"
+                        className="w-2/3 h-1/5 flex justify-center items-center flex-col ml-[5rem] max-lg:ml-5 max-lg:w-full"
                     >
-                        <div className="w-2/3 flex gap-5 justify-between items-center">
-                            <h1 className="text-3xl">{heading}</h1>
+                        <div className="w-full flex justify-between items-center">
+                            <h1 className="text-3xl w-[calc(100%-5rem)] text-creamy">
+                                {heading}
+                            </h1>
 
                             <MySpline
                                 style={{
@@ -26,7 +28,7 @@ export default function AboutMeDescription({
                                 scene={icon}
                             />
                         </div>
-                        <p className="w-2/3">{description}</p>
+                        <p className="w-full text-creamy">{description}</p>
                     </div>
                 );
             })}
