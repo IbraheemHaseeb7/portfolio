@@ -26,6 +26,7 @@ export default function Skills() {
             { img: "/skills/backend/mariadb.webp", name: "MariaDB" },
             { img: "/skills/backend/postgresql.webp", name: "PostgreSQL" },
             { img: "/skills/backend/github.webp", name: "Git/Github" },
+	    { img: "/skills/backend/docker.webp", name: "Docker" },
         ],
     };
 
@@ -100,6 +101,7 @@ export default function Skills() {
             { img: "/skills/programming_languages/c.webp", name: "C/C++" },
             { img: "/skills/programming_languages/rust.webp", name: "Rust" },
             { img: "/skills/programming_languages/r.webp", name: "R" },
+	    { img: "/skills/programming_languages/dart.webp", name: "Dart" },
         ],
     };
 
