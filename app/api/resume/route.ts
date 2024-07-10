@@ -7,6 +7,7 @@ export async function GET(request: NextRequest) {
     const response = new NextResponse(file, {
         headers: {
             "Content-Type": "application/pdf",
+            "Content-Disposition": `inline; filename="full_stack_Ibraheem_bin_haseeb.pdf"`
         },
     });
     return response;
