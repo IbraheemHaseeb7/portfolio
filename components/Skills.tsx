@@ -18,15 +18,39 @@ export default function Skills() {
             { img: "/skills/backend/supabase.webp", name: "Supabase" },
             { img: "/skills/backend/firebase.webp", name: "Firebase" },
             { img: "/skills/backend/vercel.webp", name: "Vercel" },
-            { img: "/skills/backend/aws.webp", name: "AWS" },
-            { img: "/skills/backend/azure.webp", name: "Azure" },
             { img: "/skills/backend/mongodb.webp", name: "MongoDB" },
             { img: "/skills/backend/sqlserver.webp", name: "SQL Server" },
             { img: "/skills/backend/neo4j.webp", name: "Neo4j" },
             { img: "/skills/backend/mariadb.webp", name: "MariaDB" },
             { img: "/skills/backend/postgresql.webp", name: "PostgreSQL" },
-            { img: "/skills/backend/github.webp", name: "Git/Github" },
-	    { img: "/skills/backend/docker.webp", name: "Docker" },
+            { img: "/skills/backend/laravel.webp", name: "Laravel" },
+            { img: "/skills/backend/echo.webp", name: "Echo" },
+            { img: "/skills/backend/fastapi.webp", name: "FastAPI" },
+        ],
+    };
+
+    const devopsSkills: {
+        title: string;
+        description: string;
+        skills: Array<{ img: string; name: string }>;
+    } = {
+        title: "DevOps",
+        description:
+            "Deploying code is easy, but deploying it right is an art.",
+        skills: [
+            { img: "/skills/devops/aws.webp", name: "AWS" },
+            { img: "/skills/devops/azure.webp", name: "Azure" },
+            { img: "/skills/devops/docker.webp", name: "Docker" },
+            { img: "/skills/devops/docker-compose.webp", name: "Compose" },
+            { img: "/skills/devops/github.webp", name: "Git/Github" },
+            {
+                img: "/skills/devops/github_actions.webp",
+                name: "Actions",
+            },
+            {
+                img: "/skills/devops/linux.webp",
+                name: "Linux",
+            },
         ],
     };
 
@@ -91,6 +115,10 @@ export default function Skills() {
                 name: "TypeScript",
             },
             {
+                img: "/skills/programming_languages/golang.webp",
+                name: "GoLang",
+            },
+            {
                 img: "/skills/programming_languages/python.webp",
                 name: "Python",
             },
@@ -101,7 +129,7 @@ export default function Skills() {
             { img: "/skills/programming_languages/c.webp", name: "C/C++" },
             { img: "/skills/programming_languages/rust.webp", name: "Rust" },
             { img: "/skills/programming_languages/r.webp", name: "R" },
-	    { img: "/skills/programming_languages/dart.webp", name: "Dart" },
+            { img: "/skills/programming_languages/dart.webp", name: "Dart" },
         ],
     };
 
@@ -111,6 +139,11 @@ export default function Skills() {
                 title={backEndSkills.title}
                 description={backEndSkills.description}
                 skills={backEndSkills.skills}
+            />
+            <Skill
+                title={devopsSkills.title}
+                description={devopsSkills.description}
+                skills={devopsSkills.skills}
             />
             <Skill
                 title={frontEndSkills.title}
