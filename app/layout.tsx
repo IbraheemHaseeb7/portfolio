@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import CursorTracker from "@/components/CursorTracker";
 import ReduxProvider from "@/components/ReduxProvider";
 import Options from "@/components/Options";
+import { Analytics } from "@vercel/analytics/react";
 
 const space_mono = Space_Mono({ weight: "400", subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
                 style={{ width: "100%", overflowX: "hidden" }}
             >
                 <ReduxProvider>
+                    <Analytics />
                     <Navbar />
                     <CursorTracker />
                     <Options />
